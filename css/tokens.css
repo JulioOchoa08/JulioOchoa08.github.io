@@ -1,0 +1,91 @@
+:root {
+  /* Typography */
+  --font-family-primary: Inter, Roboto, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 13.12px;
+  --font-size-md: 13.6px;
+  --font-size-lg: 14px;
+  --font-size-xl: 14.4px;
+  --font-size-2xl: 14.72px;
+  --font-size-3xl: 15.2px;
+  --font-size-4xl: 16px;
+  --font-size-base: 16px;
+  --font-size-display-sm: 28px;
+  --font-size-display-md: 36px;
+  --font-size-display-lg: 48px;
+  --font-weight-base: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-base: 24px;
+  --line-height-tight: 1.2;
+  --line-height-relaxed: 1.6;
+
+  /* Color — primitives */
+  --color-border-default: #0a0a0a;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #1a1a1a;
+  --color-surface-muted: #ffffff;
+  --color-surface-base: #000000;
+  --color-surface-strong: #f5f5f5;
+
+  /* Color — semantic */
+  --color-text-primary: var(--color-text-on-base);
+  --color-text-on-base: #ffffff;
+  --color-text-on-muted: var(--color-text-tertiary);
+  --color-text-on-strong: var(--color-text-tertiary);
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-border-on-muted: #e5e5e5;
+  --color-focus-ring: #ffffff;
+  --color-focus-ring-on-muted: #0a0a0a;
+  --color-tech: #5eb3ff;
+  --color-tech-deep: #2b7de9;
+  --color-tech-bright: #9fd4ff;
+  --color-tech-muted: rgba(94, 179, 255, 0.14);
+  --color-tech-glow: rgba(94, 179, 255, 0.35);
+  --color-tech-on-light: #1a6fd4;
+  --color-tech-on-light-hover: #1256a8;
+  --color-accent: var(--color-tech);
+  --color-accent-hover: var(--color-tech-bright);
+  --color-error: #c41e3a;
+  --color-error-bg: #fef2f2;
+  --color-success: #166534;
+  --color-success-bg: #f0fdf4;
+
+  /* Spacing */
+  --space-1: 3px;
+  --space-2: 4px;
+  --space-3: 5px;
+  --space-4: 7px;
+  --space-5: 8px;
+  --space-6: 10px;
+  --space-7: 11px;
+  --space-8: 12px;
+  --space-9: 16px;
+  --space-10: 24px;
+  --space-11: 32px;
+  --space-12: 48px;
+  --space-13: 64px;
+  --space-14: 96px;
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 50px;
+  --radius-lg: 100px;
+
+  /* Motion */
+  --motion-duration-instant: 250ms;
+  --motion-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container-max: 1140px;
+  --header-height: 64px;
+  --touch-target-min: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration-instant: 0ms;
+  }
+}
